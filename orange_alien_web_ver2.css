@@ -1,0 +1,61 @@
+body, html {
+  font-family: 'Montserrat Light',Montserrat,'Sawarabi Gothic',"游ゴシック","Yu Gothic","游ゴシック体",YuGothic,"Yu Gothic UI","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,sans-serif;
+  background-color: #E6E6FA;
+}
+body {
+  height: 1000px;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.header_logo_white {
+  display: block;
+  height: 100%;
+  padding-left: 20px;
+}
+.header_logo_black {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  height: 1800px;
+  width: 100%;
+}
+.wrapper {
+  top: 80px;
+  height: 25vw;
+  width: 100%;
+  background-color: #FAFAFA;
+  display: flex;
+}
+
+.mikann {
+  height: 90%;
+  border-radius: 50%;
+  margin: 1.25vw;
+}
+
+.ni-to_hukidasi {
+  height: 100%;
+  width: 74%;
+  z-index: 10;
+}
+.ni-to_letter {
+  position: absolute;
+  right: 0;
+  width: 55%;
+}
+.h1 {
+  font-size: calc(4.5vw);
+}
