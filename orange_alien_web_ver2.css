@@ -1,61 +1,64 @@
-body, html {
+body,
+h1, h2, h3, h4, h5, h6, p,
+ol, ul, li {
   font-family: 'Montserrat Light',Montserrat,'Sawarabi Gothic',"游ゴシック","Yu Gothic","游ゴシック体",YuGothic,"Yu Gothic UI","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,sans-serif;
-  background-color: #E6E6FA;
-}
-body {
-  height: 1000px;
+  padding: 0;
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
+ol, ul, li {
+  list-style-type: none;
+}
+body {
+  background-color: #FFFAFA;
+  width: 100%;
+}
 header {
-  height: 80px;
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000000;
+  height :60px;
+  background-color: #E6E6FA;
 }
-.header_logo_white {
-  display: block;
-  height: 100%;
-  padding-left: 20px;
-}
-.header_logo_black {
-  display: none;
-}
-
-main {
-  position: absolute;
-  top: 80px;
-  left: 0px;
-  height: 1800px;
-  width: 100%;
-}
-.wrapper {
-  top: 80px;
-  height: 25vw;
-  width: 100%;
-  background-color: #FAFAFA;
+.header {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
 }
-
-.mikann {
+.header-logo {
+  height: 60px;
+  line-height: 100px;
+  flex-grow: 1;
+}
+.oren-logo {
   height: 90%;
-  border-radius: 50%;
-  margin: 1.25vw;
 }
 
-.ni-to_hukidasi {
-  height: 100%;
-  width: 74%;
-  z-index: 9;
+.header-right {
 }
-.ni-to_letter {
-  position: absolute;
-  right: 0;
-  width: 55%;
+.header-list {
+  display: flex;
 }
-.h1 {
-  font-size: calc(4.5vw);
+.header-btn {
+  width: 160px;
+}
+.header-btn > a {
+  line-height: 60px;
+  font-size: 30px;
+  color: black;
+}
+.header-btn > a :hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.btn {
+  padding: 0 15px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+body {
+  width: 1200px;
+}
+header {
+}
+
 }
