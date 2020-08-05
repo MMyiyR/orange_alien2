@@ -1,3 +1,4 @@
+/* ---------------template--------------- */
 body,
 h1, h2, h3, h4, h5, h6, p,
 ol, ul, li {
@@ -15,6 +16,16 @@ body {
   background-color: #FFFAFA;
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+body {
+  width: 1200px;
+}
+}
+
+
+/* ---------------header--------------- */
+
 header {
   height :60px;
   background-color: #E6E6FA;
@@ -32,14 +43,11 @@ header {
 .oren-logo {
   height: 90%;
 }
-
-.header-right {
-}
 .header-list {
   display: flex;
 }
 .header-btn {
-  width: 160px;
+  width: 170px;
 }
 .header-btn > a {
   line-height: 60px;
@@ -54,11 +62,37 @@ header {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-body {
-  width: 1200px;
+/* ---------------main--------------- */
+
+main {
+  height :1000px;
+  background-color: #FAFAFA;
 }
-header {
+.main {
+  width: 1000px;
+  margin: 0 auto;
 }
 
+.main-top {
+  height: 220px;
+  display: flex;
+}
+.main-top-icon {
+  padding: 10px;
+}
+.main-top-icon > img {
+  border-radius: 50%;
+  border: 8px solid green;
+}
+.main-top-icon p {
+  text-align: center;
+}
+.main-top-about {
+  margin: auto;
+  padding: 45px 250px 50px;
+  background-image: url(https://raw.githubusercontent.com/MYIYM/ORNG_ALEN2/master/%E5%90%B9%E3%81%8D%E5%87%BA%E3%81%97-%E4%B8%B82.png);
+  background-size: 795.45px 191px;
+}
+.main-top-about > p {
+  font-size: 20px;
 }
