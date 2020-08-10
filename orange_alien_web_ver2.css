@@ -64,16 +64,15 @@ header {
 /* ---------------main--------------- */
 
 main {
-  height :1000px;
   background-color: #FAFAFA;
 }
-.main {
-  width: 1000px;
-  margin: 0 auto;
-}
+
+/* ---------------main-top--------------- */
 
 .main-top {
+  width: 1000px;
   height: 220px;
+  margin: 0 auto;
   display: flex;
 }
 .main-top-icon {
@@ -90,8 +89,63 @@ main {
   margin: auto;
   padding: 45px 290px 50px;
   background-image: url(https://raw.githubusercontent.com/MYIYM/ORNG_ALEN2/master/%E5%90%B9%E3%81%8D%E5%87%BA%E3%81%97-%E4%B8%B82.png);
-  background-size: 795.45px 191px;
+  background-size: 795.45px 164px;
 }
 .main-top-about > p {
   font-size: 20px;
 }
+
+/* ---------------main-main--------------- */
+
+.main-main {
+  height: 500px;
+}
+
+.loop-image {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+.loop-image ul {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.loop-image li {
+  display: inline-block;
+  width: calc(100vw / 2);
+  text-align: center;
+}
+.loop-image img {
+  width: 100%;
+  height: auto;
+}
+@keyframes loop {
+  0% {
+    transform: translateX(400%);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
+.loop-image img:first-child {
+  animation: loop 50s -25s linear infinite;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.loop-image img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
