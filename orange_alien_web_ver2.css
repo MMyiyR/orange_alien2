@@ -95,11 +95,7 @@ main {
   font-size: 20px;
 }
 
-/* ---------------main-main--------------- */
-
-.main-main {
-  height: 500px;
-}
+/* ---------------main-image--------------- */
 
 .loop-image {
   position: relative;
@@ -149,3 +145,7 @@ main {
   animation: loop2 50s linear infinite;
 }
 
+/* ---------------main-main--------------- */
+
+.main-main {
+}
