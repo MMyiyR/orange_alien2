@@ -101,6 +101,8 @@ main {
   position: relative;
   display: flex;
   width: 100vw;
+  min-width: 1200px;
+  margin: auto;
   flex-flow: row nowrap;
   overflow: hidden;
 }
@@ -113,7 +115,7 @@ main {
 }
 .loop-image li {
   display: inline-block;
-  width: calc(100vw / 2);
+  width: 1200px;
   text-align: center;
 }
 .loop-image img {
